@@ -6,6 +6,15 @@ import getSingleData from "@/libs/getSingleData";
 import { notFound } from "next/navigation";
 import React, { Suspense } from "react";
 
+export async function generateMetadata({ params }) {
+  const post = await getSingleData(params.postId);
+  const metadata = {
+    title: post.title,
+    description: post.body,
+  };
+  return metadata;
+}
+
 export default async function SinglePost({ params }) {
   //   const postPromise = getSingleData(params.postId);
   const post = await getSingleData(params.postId);
@@ -29,4 +38,11 @@ export default async function SinglePost({ params }) {
       </Suspense>
     </div>
   );
+}
+
+export async function generateStaticParams() {
+  const posts = await getData();
+  return posts.map((post) => ({
+    id: post.id.toString(),
+  }));
 }
