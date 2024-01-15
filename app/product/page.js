@@ -1,8 +1,10 @@
 import React from "react";
 import Title from "../Components/title";
+import img from "../../public/pexels-photo.jpeg";
+import Image from "next/image";
 
 export default function Product() {
-  throw new Error({ message: "Oops!, there is an error!" });
+  // throw new Error({ message: "Oops!, there is an error!" });
   return (
     <div>
       <Title>This is product page</Title>
@@ -30,6 +32,7 @@ export default function Product() {
         distinctio minus, cum facere sed, ratione nisi earum tenetur atque
         doloremque magnam. Unde, illo.
       </p>
+      <Image placeholder="blur" src={img} alt="img" />
     </div>
   );
 }
