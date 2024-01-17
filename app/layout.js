@@ -29,6 +29,9 @@ export default function RootLayout({ children }) {
           <p>
             <Link href="/contact">Contact</Link>
           </p>
+          <p>
+            <Link href="/signIn">Sign In</Link>
+          </p>
         </nav>
         {children}
       </body>
