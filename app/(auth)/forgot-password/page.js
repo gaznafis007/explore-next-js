@@ -1,4 +1,4 @@
-import Title from "@/app/Components/title";
+import Title from "../../Components/title";
 import React from "react";
 
 export default function ForgotPassword() {

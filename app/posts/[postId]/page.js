@@ -1,8 +1,8 @@
-import Comments from "@/app/Components/comments";
-import Title from "@/app/Components/title";
-import getComments from "@/libs/getComments";
-import getData from "@/libs/getData";
-import getSingleData from "@/libs/getSingleData";
+import Comments from "../../Components/comments";
+import Title from "../../Components/title";
+import getComments from "../../../libs/getComments";
+import getData from "../../../libs/getData";
+import getSingleData from "../../../libs/getSingleData";
 import { notFound } from "next/navigation";
 import React, { Suspense } from "react";
 

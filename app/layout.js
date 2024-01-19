@@ -32,6 +32,9 @@ export default function RootLayout({ children }) {
           <p>
             <Link href="/signIn">Sign In</Link>
           </p>
+          <p>
+            <Link href="/dashboard">Dashboard</Link>
+          </p>
         </nav>
         {children}
       </body>

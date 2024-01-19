@@ -1,5 +1,5 @@
 "use client";
-import Title from "@/app/Components/title";
+import Title from "../../Components/title";
 import { useRouter } from "next/navigation";
 import React from "react";
 

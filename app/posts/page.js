@@ -1,6 +1,6 @@
 import React from "react";
 import Title from "../Components/title";
-import getData from "@/libs/getData";
+import getData from "../../libs/getData";
 import Link from "next/link";
 import Button from "../Components/button";
 
